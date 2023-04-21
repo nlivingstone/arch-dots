@@ -16,7 +16,12 @@
 * **Screen Locker** • [Swaylock-effects, ](https://github.com/mortie/swaylock-effects) [Wlogout ](https://github.com/ArtsyMacaw/wlogout)
 * **Theme** • [Catppuccin ](https://github.com/catppuccin/catppuccin)
 
-## Installation
+## Requirements
+
+* Fresh Arch Linux (Minimal) Install
+* Pipewire
+
+## Installation Guide
 
 Install yay
 ```
