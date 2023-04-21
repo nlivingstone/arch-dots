@@ -51,3 +51,5 @@ lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 * **File Browser** • [Telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
 * **Status Line** • [Lualine.nvim ](https://github.com/nvim-lualine/lualine.nvim)
 
+## Credits
+[SolDoesTech: HyprV2 Installer](https://github.com/SolDoesTech/HyprV2)
