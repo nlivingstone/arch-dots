@@ -1,6 +1,8 @@
 # Arch + Hyprland
 
-## Warning: Work in progress. Do not clone and expect to work on your system.
+> **Warning** 
+>
+> Work in progress. Many things arent working. Using at your own risk.
 
 * **Operating System** • [Arch ](https://archlinux.org/)
 * **Window Manager** • [Hyprland ](https://github.com/hyprwm/Hyprland)
