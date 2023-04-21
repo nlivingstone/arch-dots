@@ -2,8 +2,6 @@
 
 ## Warning: Work in progress. Do not clone and expect to work on your system.
 
-
-
 * **Operating System** • [Arch ](https://archlinux.org/)
 * **Window Manager** • [Hyprland ](https://github.com/hyprwm/Hyprland)
 * **Shell** • [Starship ](https://github.com/starship/starship)
@@ -38,6 +36,11 @@ lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 
 
 ## Neovim
+
+<p align="center">
+      <img src="https://user-images.githubusercontent.com/56817415/213472445-091e54fb-091f-4448-a631-fa6b2ba7d8a5.png"/>
+</p>
+
 * **Base** [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
 * **Theme** [Catppuccin ](https://github.com/catppuccin/nvim)
 * **Package Manager** [Lazy.nvim ](https://github.com/folke/lazy.nvi21m)
