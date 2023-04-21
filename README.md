@@ -11,7 +11,7 @@
 * **Launcher** • [Wofi ](https://hg.sr.ht/~scoopta/wofi)
 * **File Manager** • [Thunar ](https://github.com/xfce-mirror/thunar)
 * **Code Editor** • [Neovim ](https://github.com/neovim/neovim) [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
-
+* **Theme** • [Catppuccin ](https://github.com/catppuccin/catppuccin)
 
 ### Install yay
 ```
