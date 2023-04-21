@@ -44,10 +44,10 @@ lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
     <img src="https://user-images.githubusercontent.com/1995501/233722112-75654b2b-e003-47c5-8d1a-f43b1131c61d.png">
 </p>
 
-* **Base** [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
-* **Theme** [Catppuccin ](https://github.com/catppuccin/nvim)
-* **Package Manager** [Lazy.nvim ](https://github.com/folke/lazy.nvi21m)
-* **Fuzzy Finder** [Telescope.nvim ](https://github.com/nvim-telescope/telescope.nvim)
-* **File Browser** [Telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
-* **Status Line** [Lualine.nvim ](https://github.com/nvim-lualine/lualine.nvim)
+* **Base** • [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
+* **Theme** • [Catppuccin ](https://github.com/catppuccin/nvim)
+* **Package Manager** • [Lazy.nvim ](https://github.com/folke/lazy.nvi21m)
+* **Fuzzy Finder** • [Telescope.nvim ](https://github.com/nvim-telescope/telescope.nvim)
+* **File Browser** • [Telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
+* **Status Line** • [Lualine.nvim ](https://github.com/nvim-lualine/lualine.nvim)
 
