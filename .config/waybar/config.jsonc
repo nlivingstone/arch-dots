@@ -1,0 +1,154 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "modules-left": ["custom/launch_wofi","wlr/workspaces","hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/change_wallpaper","network","battery","backlight","pulseaudio","pulseaudio#microphone","custom/power_btn","custom/lock_screen","custom/updates"],
+    
+    "hyprland/window": {
+        "format": "{}",
+	"max-length": "150"
+    },
+
+    "network": {
+        "interface": "wlan0",
+        "format": "{ifname}",
+        "format-wifi": "<span size='18pt'></span> <span rise='5000'>{essid}</span>",
+        "format-ethernet": "<span size='18pt'>󰈀</span>",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+	"on-click":"nm-connection-editor",
+	"tooltip": "false"
+    },
+
+    "custom/launch_wofi": {
+        "format": "",
+        "on-click": "pkill wofi; wofi -n",
+        "tooltip": false
+    },
+
+    "custom/lock_screen": {
+        "format": "",
+        "on-click": "sh -c '(sleep 0.5s; swaylock)' & disown",
+        "tooltip": false
+    },
+
+    "custom/change_wallpaper": {
+        "format": "󰐾",
+        "on-click": "~/.config/hypr/scripts/set-wallpaper ~/.config/wallpaper",
+        "tooltip": false
+    },
+
+    "custom/power_btn": {
+        "format": "",
+        "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
+        "tooltip": false
+    },
+
+
+    "custom/updates": {
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/update-sys",
+        "on-click": "~/.config/waybar/scripts/update-sys update",
+        "interval": 300,
+        "tooltip": true
+    },
+
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+    
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%A, %B %e  %H:%M}"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "<span size='17pt'>{icon}</span> <span rise='4500'>{percent}%</span>",
+        "format-icons": ["", "", ""],
+	"icon-size":"14",
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+    },
+
+    "pulseaudio": {
+        "format": "<span size='17pt'>{icon}</span> <span rise='4500'>{volume}%</span>",
+        "format-muted": "<span size='17pt'></span>",
+        "on-click": "pamixer -t",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+	"icon-size":"20px",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰕿", "󰕾", ""]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "<span size='10pt'></span> <span rise='1000'>{volume}%</span>",
+        "format-source-muted": "<span size='12pt'></span>",
+        "on-click": "pamixer --default-source -t",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+    
+    "temperature": {
+        "thermal-zone": 1,
+        "format": " {temperatureC}°F",
+        "critical-threshold": 70,
+        "format-critical": " {temperatureC}°C",
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    }
+}
