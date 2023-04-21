@@ -13,7 +13,7 @@
 * **Launcher** • [Wofi ](https://hg.sr.ht/~scoopta/wofi)
 * **File Manager** • [Thunar ](https://github.com/xfce-mirror/thunar)
 * **Code Editor** • [Neovim ](https://github.com/neovim/neovim)
-* **Screen Locker** • [Swaylock-effects ](https://github.com/mortie/swaylock-effects) [Wlogout ](https://github.com/ArtsyMacaw/wlogout)
+* **Screen Locker** • [Swaylock-effects, ](https://github.com/mortie/swaylock-effects) [Wlogout ](https://github.com/ArtsyMacaw/wlogout)
 * **Theme** • [Catppuccin ](https://github.com/catppuccin/catppuccin)
 
 ## Installation
