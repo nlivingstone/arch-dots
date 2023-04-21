@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BORDER=20
+LEFT=$(hyprctl activewindow -j | jq -r '.at[0]')
+TOP=$(hyprctl activewindow -j | jq -r '.at[1]')
+WIDTH=$(hyprctl activewindow -j | jq -r '.size[0]')
+HEIGHT=$(hyprctl activewindow -j | jq -r '.size[1]')
+GEOMETRY=$(printf '%s,%s %sx%s' $(expr $LEFT - $BORDER) $(expr $TOP - $BORDER) $(expr $WIDTH + $BORDER + $BORDER) $(expr $HEIGHT + $BORDER + $BORDER))
+
+#notify-send $GEOMETRY
+grim -g "$GEOMETRY" - | swappy -f -
