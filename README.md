@@ -1,6 +1,6 @@
 * **Operating System** • [Arch ](https://archlinux.org/)
 * **Window Manager** • [Hyprland ](https://github.com/hyprwm/Hyprland)
-* **Shell** • [Starship] (https://github.com/starship/starship)
+* **Shell** • [Starship ](https://github.com/starship/starship)
 * **Terminal** • [Kitty ](https://github.com/kovidgoyal/kitty)
 * **Panel** • [Waybar ](https://aur.archlinux.org/packages/waybar-hyprland-git)
 * **Notify Daemon** • [Dunst ](https://github.com/dunst-project/dunst)
