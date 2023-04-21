@@ -38,7 +38,7 @@ lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 ## Neovim
 
 <p align="center">
-      <img src="https://user-images.githubusercontent.com/56817415/213472445-091e54fb-091f-4448-a631-fa6b2ba7d8a5.png"/>
+    ![neovim](https://user-images.githubusercontent.com/1995501/233722112-75654b2b-e003-47c5-8d1a-f43b1131c61d.png)
 </p>
 
 * **Base** [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
