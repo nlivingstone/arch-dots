@@ -12,7 +12,8 @@
 * **Notify Daemon** • [Dunst ](https://github.com/dunst-project/dunst)
 * **Launcher** • [Wofi ](https://hg.sr.ht/~scoopta/wofi)
 * **File Manager** • [Thunar ](https://github.com/xfce-mirror/thunar)
-* **Code Editor** • [Neovim ](https://github.com/neovim/neovim) [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
+* **Code Editor** • [Neovim ](https://github.com/neovim/neovim)
+* **Screen Locker** • [Swaylock-effects ](https://github.com/mortie/swaylock-effects) [Wlogout ](https://github.com/ArtsyMacaw/wlogout)
 * **Theme** • [Catppuccin ](https://github.com/catppuccin/catppuccin)
 
 ## Installation
@@ -49,3 +50,4 @@ lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 * **Fuzzy Finder** [Telescope.nvim ](https://github.com/nvim-telescope/telescope.nvim)
 * **File Browser** [Telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
 * **Status Line** [Lualine.nvim ](https://github.com/nvim-lualine/lualine.nvim)
+
