@@ -1,6 +1,8 @@
 # Arch + Hyprland
 
-## Warning: Work in progress. Do not clone and expect to work on your system.
+> **Warning** 
+>
+> Work in progress. Many things arent working. Using at your own risk.
 
 * **Operating System** • [Arch ](https://archlinux.org/)
 * **Window Manager** • [Hyprland ](https://github.com/hyprwm/Hyprland)
@@ -10,10 +12,16 @@
 * **Notify Daemon** • [Dunst ](https://github.com/dunst-project/dunst)
 * **Launcher** • [Wofi ](https://hg.sr.ht/~scoopta/wofi)
 * **File Manager** • [Thunar ](https://github.com/xfce-mirror/thunar)
-* **Code Editor** • [Neovim ](https://github.com/neovim/neovim) [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
+* **Code Editor** • [Neovim ](https://github.com/neovim/neovim)
+* **Screen Locker** • [Swaylock-effects, ](https://github.com/mortie/swaylock-effects) [Wlogout ](https://github.com/ArtsyMacaw/wlogout)
 * **Theme** • [Catppuccin ](https://github.com/catppuccin/catppuccin)
 
-## Installation
+## Requirements
+
+* Fresh Arch Linux (Minimal) Install
+* Pipewire
+
+## Installation Guide
 
 Install yay
 ```
@@ -41,9 +49,12 @@ lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
     <img src="https://user-images.githubusercontent.com/1995501/233722112-75654b2b-e003-47c5-8d1a-f43b1131c61d.png">
 </p>
 
-* **Base** [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
-* **Theme** [Catppuccin ](https://github.com/catppuccin/nvim)
-* **Package Manager** [Lazy.nvim ](https://github.com/folke/lazy.nvi21m)
-* **Fuzzy Finder** [Telescope.nvim ](https://github.com/nvim-telescope/telescope.nvim)
-* **File Browser** [Telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
-* **Status Line** [Lualine.nvim ](https://github.com/nvim-lualine/lualine.nvim)
+* **Base** • [Kickstart.nvim ](https://github.com/nvim-lua/kickstart.nvim)
+* **Theme** • [Catppuccin ](https://github.com/catppuccin/nvim)
+* **Package Manager** • [Lazy.nvim ](https://github.com/folke/lazy.nvi21m)
+* **Fuzzy Finder** • [Telescope.nvim ](https://github.com/nvim-telescope/telescope.nvim)
+* **File Browser** • [Telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
+* **Status Line** • [Lualine.nvim ](https://github.com/nvim-lualine/lualine.nvim)
+
+## Credits
+[SolDoesTech: HyprV2 Installer](https://github.com/SolDoesTech/HyprV2)
