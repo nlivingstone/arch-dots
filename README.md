@@ -1,9 +1,12 @@
 # Arch + Hyprland
 
+Configuration files for my (soon to be) fill-time development machine. 
+
 > **Warning** 
 >
 > Work in progress. Many things arent working. Using at your own risk.
 
+* **Hardware** • ThinkPad E14
 * **Operating System** • [Arch ](https://archlinux.org/)
 * **Window Manager** • [Hyprland ](https://github.com/hyprwm/Hyprland)
 * **Shell** • [Starship ](https://github.com/starship/starship)
