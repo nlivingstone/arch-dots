@@ -42,6 +42,10 @@ pacman-contrib starship ttf-jetbrains-mono-nerd noto-fonts-emoji
 lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 ```
 
+Copy Config Files
+```
+ln -s ${pwd}/scripts ~/.scripts
+```
 
 ## Neovim
 
