@@ -29,8 +29,8 @@ function get_wallpaper () {
 SWWW_WALLPAPER_DIR="$1"
 SWWW_TRANSITION_FPS=60
 SWWW_TRANSITION_STEP=1
-SWWW_TRANSITION_TYPE=grow
-SWWW_TRANSITION_EASING="@TODO"
+SWWW_TRANSITION_TYPE=wipe
+SWWW_TRANSITION_BEZIER=.20,.40,.60,.40,.20
 SWWW_NEXT_WALLPAPER=$(get_wallpaper $SWWW_WALLPAPER_DIR)
 SWWW_CURRENT_WALLPAPER=$(cat $HOME/.wallpaper)
 
@@ -44,6 +44,6 @@ swww img $SWWW_NEXT_WALLPAPER \
 --transition-step $SWWW_TRANSITION_STEP \
 --transition-fps $SWWW_TRANSITION_FPS \
 --transition-pos top-right \
---transition-bezier .20,.40,.60,.40,.20
+--transition-bezier $SWWW_TRANSITION_BEZIER 
 
-echo $SWWW_CURRENT_WALLPAPER > $HOME/.wallpaper
+echo $SWWW_NEXT_WALLPAPER > $HOME/.wallpaper
