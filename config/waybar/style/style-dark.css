@@ -1,0 +1,181 @@
+* {
+    font-family: "SF Pro Display";
+    font-weight: 800;
+    font-size: 13px;
+}
+
+window#waybar { 
+    color: @theme_text_color;
+    background: rgba(21, 18, 27, 0.01);
+}
+
+window .modules-left, window .modules-center, window .modules-right {
+    padding: 10px;
+}
+
+button, button:hover {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+tooltip {
+    color: @theme_text_color;
+    background: @theme_bg_color;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+tooltip label{
+    border: none;
+}
+
+
+#custom-launch_wofi,
+#custom-lock_screen,
+#custom-change_wallpaper,
+#custom-power_btn,
+#custom-power_profile,
+#custom-weather,
+#window,
+#cpu,
+#disk,
+#custom-updates,
+#memory,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#temperature,
+#workspaces,
+#backlight {
+    background: #11111b;
+    color: @theme_text_color;
+    opacity: 0.9;
+    border: none;
+}
+
+#custom-launch_wofi {
+    color: #3b82f6;
+    font-size: 24px;
+    padding: 0 12px;
+    margin: 0 10px 0 0;
+    border-radius: 12px;
+}
+
+#workspaces {
+    color: #FFF;
+    padding: 0 5px;
+    margin: 0 10px 0 0;
+    border-radius: 12px;
+}
+
+#workspaces button {
+    color: @theme_text_color;
+    padding: 5px;
+    transition: color 250ms ease-in-out;
+    border-radius: 12px;
+}
+
+#workspaces button.active {
+    color: #3b82f6;
+}
+
+#workspaces button.focused {
+}
+
+#workspaces button.urgent {
+}
+
+#window {
+    padding: 0 15px;
+    border-radius: 12px;
+}
+
+#clock {
+    padding: 0 15px;
+    border-radius: 12px;
+}
+
+#custom-change_wallpaper {
+    padding: 0 15px;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+#network {
+    padding: 0 15px;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+#custom-power_btn {
+    border-radius: 10px 0 0 10px;
+    padding: 0 10px 0 15px;
+    margin: 0;
+    font-size: 18px;
+}
+
+#custom-lock_screen {
+   margin: 0 10px 0 0;
+     border-radius: 0 10px 10px 0;
+    padding: 0 15px 0 10px;
+    font-size: 15px;
+}
+
+#custom-updates {
+    margin: 0;
+    padding: 0 15px;
+     font-size: 18px;
+     border-radius: 10px;
+}
+
+
+#custom-power_profile {
+    color: #a6e3a1;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#battery {
+    border-radius: 10px 0 0 10px; 
+    padding: 0 10px 0 15px;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+    animation-name: attention;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes attention {
+    from {
+        color: rgba(243, 139, 168, 1);
+    }
+    to {
+        color: rgba(243, 139, 168, .5);
+    }
+}
+
+#backlight {
+    padding: 0 10px 0 0;
+}
+
+#pulseaudio {
+    padding: 0 10px 0 0;
+}
+
+#pulseaudio.microphone {
+    padding: 0 15px 0 0;
+    border-radius: 0 10px 10px 0;
+    margin: 0 10px 0 0;
+}
+
+
