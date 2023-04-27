@@ -33,8 +33,6 @@ SWWW_TRANSITION_TYPE=center
 SWWW_TRANSITION_EASING="@TODO"
 SWWW_CURRENT_WALLPAPER=$(get_wallpaper $SWWW_WALLPAPER_DIR)
 
-
 swww img $SWWW_CURRENT_WALLPAPER --transition-type $SWWW_TRANSITION_TYPE --transition-step $SWWW_TRANSITION_STEP --transition-fps $SWWW_TRANSITION_FPS
 
-
-# @TODO: Write current wallpaper path to a file so it can be used by swawlock and others
+echo $SWWW_CURRENT_WALLPAPER > $HOME/.wallpaper
