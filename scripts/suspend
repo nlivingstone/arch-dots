@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+CURRENT_WALLPAPER=$(cat $HOME/.wallpaper)
+
+swaylock -f --image "$CURRENT_WALLPAPER" --font="SF Pro Display"
+
+systemctl suspend
