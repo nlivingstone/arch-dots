@@ -32,3 +32,11 @@ if [ ! -d $SWAYLOCK_DIR ]; then
 else 
 	echo "$SWAYLOCK_DIR exists... Skipping."
 fi
+
+WAYBAR_DIR="$HOME/.config/waybar"
+if [ ! -d $WAYBAR_DIR ]; then
+	echo "$WAYBAR_DIR does not exist... Creating symlink."
+	ln -s $PWD/config/waybar ~/.config/waybar
+else 
+	echo "$WAYBAR_DIR exists... Skipping."
+fi
